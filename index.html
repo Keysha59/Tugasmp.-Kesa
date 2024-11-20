@@ -1,63 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Punya dhea</title>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <div class="navbar-container">
-      <div>
-        <h1><i>Dhea Website</i></h1>
-      </div>
-      <nav>
-        <ul class="nav-list">
-          <li><a href="#hobi">Hobi</a></li>
-          <li><a href="#fav">Mapel</a></li>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page Dicoding</title>
+    <!-- My Own CSS -->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome 5.15.4 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header class="navbar-container">
+      <figure class="logo">
+        <img src="image/keysha.jpg" alt="Keysha" />
+        <figcaption>Maenda</figcaption>
+      </figure>
+      <nav class="nav-list">
+        <ul>
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#favorite">Favorite</a></li>
+          <li><a href="#pengalaman">Pengalaman</a></li>
+          <li><a onclick="color()">Mode</a></li>
         </ul>
       </nav>
-    </div>
-  </header>
-
-  <main>
-    <div class="content">
-      <div class="inti">
-        <section id="hobi">
-          <article>
-            <h2>Hobi</h2>
-            <p>Dance adalah caraku mengekspresikan diri tanpa kata-kata. Setiap gerakan adalah cerita, setiap langkah adalah jiwa yang berbicara. Melalui tarian, aku menemukan kebahagiaan, kebebasan, dan kekuatan untuk terus bergerak maju</p>
-          </article>
-        </section>
+    </header>
     
-        <section id="fav">
-          <article>
-            <h2>Mata Pelajaran Favorit</h2>
-            <p>Matematika adalah mata pelajaran favoritku karena setiap rumus yang berhasil kupecahkan seperti membuka pintu menuju dunia yang penuh logika dan keindahan.</p>
-          </article>
+    <main class="container">
+      <div class="container-content">
+      <article class="content card">
+        <section class="content-description">
+          <h1 class="title">Tentang Saya</h1>
+          <p>
+            Saya adalah Keysha seorang pelajar di Sekolah Menengah Kejuruan Negeri-9, 
+            saya bersekolah dengan jurusan rpl, di jurusan ini saya dapat banyak pelajaran,
+            bukan hanya mengenai teknologi seperti Website, App, Data Base, tapi juga mengenai
+            logika, pemecahan masalah dan seni.
+          </p>
+          <button><a href="https://www.instagram.com/erlanggaramzi/profilecard/?igsh=Y2F3OXZtcGtpdmJw">Instagram Saya</a></button>
         </section>
-      </div>
+      </article>
+
+      <article class="content card">
+        <section class="content-description">
+          <h3 id="favorite" class="title">Hobi</h3>
+          <figure>
+            <img src="image/melukis.jpg" alt="raket" />
+          </figure>
+          <p>
+            Salah satu hobi saya adalah melukis 
+            saya mulai melukis sejak saya SD, awalnya saya hanya iseng coba coba eh malah jadi hobi, karena itu sampai sekarang saya masih sangat menyukai melukis
+          </p>
+        </section>
+
+        <section class="content-description">
+          <h3 class="title">Pelajaran Favorit</h3>
+          <figure>
+            <img src="image/ipa.png" alt="math" />
+          </figure>
+          <p>
+            Untuk saat ini selain program saya sangat tertarik dengan ipa, yang membuat saya 
+            mampu berpikir kritis dengan cepat, dan ipa adalah salah satu pelajaran yang paing penting
+            yang wajib di kuasai oleh semua orang.
+          </p>
+        </section>
+
+        <section class="content-description">
+          <h1 class="title">Makanan Favorit</h1>
+          <figure>
+            <img src="image/makanan.jpg" alt="mie aceh" />
+          </figure>
+          <p>
+            mie aceh adalah makanan favorit saya karena enak, dan mempunyai banyak varian, seperti nasi goreng kampung, mie aceh seafood, dan masih banyak lagi, bahkan menurut saya hanya segelintir orang yang gak suka mie aceh.
+          </p>
+        </section>
+      </article>
       
-
-
-    <aside>
-      <h2>Tentang Saya</h2>
-      <p>Nama Saya Dhea Afrilla Dewi</p>
-      <img src="img/profile.jpg" alt="Foto Profil" class="profile-image">
-      <table>
-        <tr><th>Negara</th><td>Indonesia</td></tr>
-        <tr><th>Hari Jadi</th><td>19 april 2008</td></tr>
-        <tr><th>Tinggi Badan</th><td>159cm</td></tr>
-        <tr><th>Bahasa Daerah</th><td>melayu</td></tr>
-      </table>
-    </aside>
+      <article class="content card">
+        <section id="pengalaman" class="content-description">
+          <h1 class="title">Pengalaman</h1>
+          <p>
+            Pengalaman Libur ke Danau Toba
+Perjalanan ke Danau Toba adalah pengalaman yang tak terlupakan! Kami berangkat pagi-pagi sekali, dan setelah beberapa jam perjalanan, akhirnya sampai di Parapat. Udara sejuk dan pemandangan danau yang luas langsung menyambut kami.
+          </p>
+          <p>
+            Salah satu momen favoritku adalah saat kami berenang di air terjun Sipiso-piso. Airnya sangat jernih dan menyegarkan. Kami juga mencoba makanan khas Batak, seperti arsik ikan mas dan saksang. Rasanya lezat!
+          </p>
+        </section>
+      </article>
     </div>
-  </main>
-  
-  <footer>
-    <p>&copy; 2024 All rights reserved</p>
-  </footer>
-</body>
+
+      <aside>
+        <article class="data card">
+          <figure class="content-image">
+            <img src="image/kesaa.jpg" alt="Dicoding Indonesia" />
+          </figure>
+          <figcaption class="content-data">
+            <table>
+              <tr>
+                <td>Nama</td> 
+                <td>Keysha Fira M</td>
+              </tr>
+              <tr>
+                <td>TTL</td>
+                <td>Medan, 5 09 2008</td>
+              </tr>
+              <tr>
+                <td>Pendidikan</td>
+                <td>SMKN-9</td>
+              </tr>
+            </table>
+          </figcaption>
+        </article>
+        
+        <article class="social-media card">
+          <ul>
+            <li>
+              <a href="#"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+          </ul>
+        </article>
+      </aside>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Rajendra | All Rights Reserved</p>
+    </footer>
+    
+    <script src="script/script.js" type="text/javascript" charset="utf-8"></script>
+  </body>
 </html>
